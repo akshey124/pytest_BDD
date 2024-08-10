@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 @pytest.fixture()
-def setfup():
+def setup():
     serv_obj = Service("F:\Drivers\chromedriver-win64\chromedriver-win64\chromedriver.exe")
     driver = webdriver.Chrome(service=serv_obj)
     driver.maximize_window()
